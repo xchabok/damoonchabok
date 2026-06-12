@@ -122,3 +122,37 @@ button:hover{
 html{
     scroll-behavior:smooth;
 }
+
+.project-image{
+    width:100%;
+    max-width:679px;
+    height:auto;
+    display:block;
+    margin:30px auto 10px auto;
+}
+
+.card p{
+    margin:6px 0 14px 0;
+    line-height:1.6;
+}
+
+.card img + p{
+    margin-top:8px;
+}
+
+.septets .project-image{
+    margin:25px auto 6px auto;
+}
+
+.septets .card p{
+    margin:6px 0 12px 0;
+}
+
+.target .project-image{
+    margin:45px auto 15px auto;
+}
+
+.target .card p{
+    margin:10px 0 18px 0;
+    line-height:1.8;
+}
