@@ -1,50 +1,92 @@
-.subtitle{
-    color:var(--muted);
-    font-size:1.2rem;
-    margin-bottom:30px;
+:root{
+  --bg:#0b0b0c;
+  --panel:#141416;
+  --text:#f1f1f1;
+  --muted:#a1a1a1;
+  --accent:#c7a86b;
+  --border:#1f1f22;
 }
 
-header{
-    margin-bottom:40px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-section{
-    margin-bottom:30px;
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  max-width:900px;
+  margin:auto;
+  padding:70px 25px;
+  line-height:1.9;
+  letter-spacing:0.2px;
+}
+
+/* NAV (خیلی مهم برای حس طراحی) */
+nav{
+  display:flex;
+  gap:28px;
+  margin-bottom:90px;
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:2px;
 }
 
 nav a{
-    padding-bottom:5px;
-    border-bottom:1px solid transparent;
-    transition:0.2s;
+  color:var(--muted);
+  text-decoration:none;
+  transition:0.3s;
 }
 
 nav a:hover{
-    border-bottom:1px solid var(--accent);
-}
-input, textarea{
-    width:100%;
-    background:var(--bg);
-    border:1px solid var(--border);
-    color:var(--text);
-    padding:12px;
-    margin-top:6px;
-    outline:none;
+  color:var(--accent);
 }
 
-input:focus, textarea:focus{
-    border-color:var(--accent);
+/* TYPOGRAPHY */
+h1{
+  font-size:3.2rem;
+  font-weight:500;
+  margin-bottom:20px;
 }
 
-button{
-    background:var(--accent);
-    border:none;
-    padding:12px 20px;
-    cursor:pointer;
-    color:#111;
-    font-weight:bold;
-    margin-top:10px;
+h2{
+  font-size:1.4rem;
+  margin:50px 0 20px;
+  color:var(--accent);
+  font-weight:500;
 }
 
-button:hover{
-    opacity:0.9;
+p{
+  color:var(--text);
+  opacity:0.9;
+  margin-bottom:18px;
+  max-width:70ch;
+}
+
+/* CARD */
+.card{
+  background:transparent;
+  border-left:1px solid var(--border);
+  padding-left:20px;
+  margin:50px 0;
+}
+
+/* LINKS */
+a{
+  color:var(--accent);
+}
+
+/* FOOTER */
+footer{
+  margin-top:120px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* subtle hover feel */
+.card:hover{
+  border-left:1px solid var(--accent);
+  transition:0.4s;
 }
