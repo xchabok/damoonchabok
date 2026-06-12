@@ -156,3 +156,12 @@ html{
     margin:10px 0 18px 0;
     line-height:1.8;
 }
+
+a{
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
