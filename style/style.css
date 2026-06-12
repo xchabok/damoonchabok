@@ -33,13 +33,24 @@ body{
   letter-spacing:0.2px;
 }
 
-nav{
-  display:flex;
-  gap:28px;
-  margin-bottom:90px;
-  font-size:14px;
-  text-transform:uppercase;
-  letter-spacing:2px;
+.main-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:90px;
+}
+
+.nav-left{
+    display:flex;
+    gap:28px;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
 }
 
 nav a{
