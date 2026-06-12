@@ -1,10 +1,19 @@
 :root{
-  --bg:#0b0b0c;
-  --panel:#141416;
-  --text:#f1f1f1;
-  --muted:#a1a1a1;
-  --accent:#c7a86b;
-  --border:#1f1f22;
+    --bg:#0d0d0d;
+    --text:#e8e8e8;
+    --panel:#171717;
+    --muted:#9a9a9a;
+    --accent:#c7a86b;
+    --border:#252525;
+}
+
+body.light{
+    --bg:#f5f5f5;
+    --text:#111;
+    --panel:#ffffff;
+    --muted:#555;
+    --accent:#7a5c2e;
+    --border:#ddd;
 }
 
 *{
@@ -24,7 +33,6 @@ body{
   letter-spacing:0.2px;
 }
 
-/* NAV (خیلی مهم برای حس طراحی) */
 nav{
   display:flex;
   gap:28px;
@@ -106,17 +114,19 @@ textarea{
 }
 
 button{
-  width:100%;
-  padding:12px;
-  background:var(--accent);
-  border:none;
-  color:#111;
-  font-weight:bold;
-  cursor:pointer;
+    background:transparent;
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:6px 10px;
+    cursor:pointer;
+    font-size:12px;
+    letter-spacing:1px;
+    transition:0.3s;
 }
 
 button:hover{
-  opacity:0.9;
+    border-color:var(--accent);
+    color:var(--accent);
 }
 
 html{
