@@ -90,3 +90,31 @@ footer{
   border-left:1px solid var(--accent);
   transition:0.4s;
 }
+
+input, textarea{
+  width:100%;
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:12px;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+textarea{
+  resize:none;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background:var(--accent);
+  border:none;
+  color:#111;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:0.9;
+}
